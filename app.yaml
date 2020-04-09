@@ -1,0 +1,33 @@
+runtime: nodejs10
+
+handlers: 
+- url: /
+  static_files: dist/index.html
+  upload: dist/index.html
+  mime_type: text/html
+
+- url: /(.+\.js)
+  static_files: dist/\1
+  upload: dist/(.+\.js)
+  mime_type: application/javascript
+
+- url: /(.+\.css)
+  static_files: dist/\1
+  upload: dist/(.+\.css)
+  mime_type: text/css
+
+- url: /assets/(.+\.gif)
+  static_files: dist/assets/\1
+  upload: dist/assets/(.+\.gif)
+  mime_type: image/gif
+
+- url: /assets/(.+\.png)
+  static_files: dist/assets/\1
+  upload: dist/assets/(.+\.png)
+  mime_type: image/png
+  
+- url: /favicon.ico
+  static_files: dist/favicon.ico
+  upload: dist/favicon.ico
+  mime_type: image/x-icon
+

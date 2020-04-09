@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'freeCodeApp';
+  source = {
+    background: 'url("../assets/kickflip.gif") no-repeat center',
+    width: '100%'
+  };
 }
