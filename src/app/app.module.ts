@@ -3,13 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { GMapModule } from 'primeng/gmap';
+declare var google: any;
+
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    GoogleMapsModule,
+    BrowserModule,
+    GMapModule
   ],
   providers: [
     {

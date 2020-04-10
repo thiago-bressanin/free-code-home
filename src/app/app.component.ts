@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'freeCodeApp';
+  options = { center: { lat: -15.7744219, lng: -48.077959 }, zoom: 4 };
   source = {
     background: 'url("../assets/kickflip.gif") no-repeat center',
     width: '100%'
