@@ -1,4 +1,5 @@
 {
+  "strict": true,
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
@@ -7,10 +8,13 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "module": "esnext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
+    "types": [
+      "node"
+    ],
     "paths": {
       "@app/*": [
         "app/*"
@@ -19,8 +23,11 @@
         "assets/*"
       ],
     },
+    "typeRoots": [
+      "node_modules/@types"
+    ],
     "lib": [
-      "es2018",
+      "ESNext",
       "dom"
     ],
   },
