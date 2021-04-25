@@ -1,5 +1,5 @@
 {
-  "name": "free-code-app",
+  "name": "fcode",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -22,14 +22,16 @@
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
     "@angular/router": "~9.1.0",
+    "@types/three": "^0.103.2",
     "primeicons": "^2.0.0",
-    "primeng": "^9.0.5",
+    "primeng": "^11.0.0",
     "rxjs": "~6.5.4",
+    "three": "^0.123.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.1000.5",
+    "@angular-devkit/build-angular": "^0.1100.4",
     "@angular/cli": "~9.1.0",
     "@angular/compiler-cli": "~9.1.0",
     "@angular/language-service": "~9.1.0",

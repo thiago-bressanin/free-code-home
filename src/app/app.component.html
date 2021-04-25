@@ -1,23 +1,12 @@
 <div class="css-selector">
-    <div class="content">
-        <div class="progress-bar progress-bar-striped" [ngStyle]="progressBar.style"></div>
-        
-    </div>
-            <div class="lds-ripple">
-                <div>
-    
-                </div>
-                <div>
-    
-                </div>
-                <div>
-    
-                </div>
-                <div>
-    
-                </div>
-                <div>
-    
-                </div>
+    <ng-container>
+        <div>
+            <div (pointermove)="event($event)">
+
             </div>
         </div>
+    </ng-container>
+
+    <fcode-three></fcode-three>
+
+</div>
